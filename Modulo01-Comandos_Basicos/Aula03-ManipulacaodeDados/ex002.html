@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h2>Seja bem-vindo!</h2>
+
+    <script>
+        /* string -> number
+            Number.parseInt(n) para numeros inteiros
+            Number.parseFloat(n) para numeros decimais
+            Number(n) para JS decidir automatico
+
+           number -> string
+            String(n)
+            n.toString()
+        */
+        var n1 = Number(window.prompt('Digite o primeiro numero: ')) 
+        var n2 = Number(window.prompt('Digite o segundo numero: '))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+    </script>
+</body>
+</html>
