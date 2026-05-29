@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript</title>
+    <style>
+        body {
+            background-color: gray;
+            color: white;
+            font: normal 1.5em arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Document Object Model</h1>
+    <p>Estudos sobre DOM</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+
+    
+    <script>
+        /* 
+           getElementsByTagName()  por TAG
+           getElementsById() por ID
+           getElementsByName()[para selecionar o elemento especifico]
+           getElementsByClassName
+           
+           querySelector()  querySelectorAll() para id e class como no CSS
+        */
+
+        /* 
+        var d = window.document.getElementById('msg')
+        d.innerHTML = 'Mudando o texto...' 
+        */
+
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'blue'
+    </script>
+</body>
+</html>
